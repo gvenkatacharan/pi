@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Reading Sensor Values</title>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="5" > 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+<style>
+body{
+    position:relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:100%;
+    height:90%;
+    margin:0;
+}
+#header {
+	width:100%;
+	height:200px;
+	background-color: #34495e;
+	color: white;
+}
+#sidebar {
+	width:200px;
+	height:400px;
+	background-color:#f1c40f;
+	float:left;
+}
+#data {
+	height:700px;
+	background:#c0392b;
+
+}
+
+#thermometer {
+	margin-top: -100px;
+	margin-bottom: 100px;
+	margin-right: 0px;
+}
+
+#adminLogo {
+	background-color:white;
+	border-radius:50px;
+}
+
+#boy {
+	width: 195px;
+	height: 130px;
+}
+
+ul {
+	list-style-type:none;
+	text-align:left;
+}
+
+ul li {
+	padding: 20px;
+	border-bottom: 2px solid gray;
+}
+
+ul li:hover {
+	background-color: #c0392b
+}
+
+</style>
+</head>
+
+<body>
+<div id="header">
+<center><img id="boy" src="https://www.clipartsgram.com/image/1183263741-scienceairtemperature.gif" alt="adminLogo"><br><h2>Room Temperature Readings</h2></center>
+</div>
+
+<div id="sidebar">
+<ul>
+<li><b>Temperature Readings={{sensor1}}</b></li>
+<li><b>Humidity Readings</b></li>
+<li><b>Soil Moisture Readings</b></li>
+</ul>
+</div>
+
+<div id="data">
+	<img id="thermometer" src="http://img68.laughinggif.com/pic/HTTP3d3dy50cm5nY21kLm1hcmluZXMubWlsL3BvcnRhbHMvMjA3L01lZGlhL01DQ1NTUy9BbmltYXRpb25zL3RoZXJtb21ldGVyLmdpZgloglog.gif" width="500px" height="733px" align="right">
+</div>
+
+</body>
+</html>
